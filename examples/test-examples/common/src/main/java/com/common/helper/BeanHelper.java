@@ -17,5 +17,12 @@ public class BeanHelper
     	
     	return employees.stream().filter(testForEmpName).findFirst().get();
 	}
+    
+    public Employee getEmployeeDetails(Integer id, String empName) {
+
+		Predicate<Employee> testForEmpName = emp -> emp.getName().equalsIgnoreCase(empName) && emp.getId().equals(id);
+
+		return employees.stream().filter(testForEmpName).findFirst().get();
+	}
 }
 

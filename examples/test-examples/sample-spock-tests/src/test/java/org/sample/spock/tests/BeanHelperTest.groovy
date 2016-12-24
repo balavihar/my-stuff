@@ -1,7 +1,7 @@
-package com.bt.uta.ui.common.service
+package org.sample.spock.tests
 
-import com.BeanHelper
-import com.Employee
+import com.common.helper.BeanHelper
+import com.common.helper.Employee
 import spock.lang.Unroll
 
 class BeanHelperTest extends TestService {

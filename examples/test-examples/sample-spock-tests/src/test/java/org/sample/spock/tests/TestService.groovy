@@ -1,6 +1,6 @@
-package com.bt.uta.ui.common.service;
+package org.sample.spock.tests;
 
-import com.Employee
+import com.common.helper.Employee
 import spock.lang.Specification;
 
 import java.util.List;

@@ -25,6 +25,7 @@
     <module>sample-junit-tests</module>
     <module>sample-spock-tests</module>
     <module>common</module>
+    <module>geb-spock-tests</module>
   </modules>
   
   <dependencyManagement>

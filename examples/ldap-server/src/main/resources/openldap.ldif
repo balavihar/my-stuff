@@ -1,0 +1,81 @@
+version: 1
+dn: dc=maxcrc,dc=com
+objectClass: domain
+objectClass: top
+dc: maxcrc
+
+dn: dc=itsnet,dc=maxcrc,dc=com
+objectClass: domain
+objectClass: top
+dc: itsnet
+
+dn: cn=Users,dc=itsnet,dc=maxcrc,dc=com
+objectClass: container
+objectClass: top
+cn: Users
+
+dn: cn=Admin,cn=Users,dc=itsnet,dc=maxcrc,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: uidObject
+objectClass: top
+cn: Admin
+sn: admin
+uid: admin
+userPassword:: e1NIQX0wRFBpS3VOSXJyVm1EOElVQ3V3MWhReE5xWmM9
+
+dn: cn=Super Admin,cn=Users,dc=itsnet,dc=maxcrc,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: uidObject
+objectClass: top
+cn: Super Admin
+sn: SuperAdmin
+uid: superadmin
+userPassword:: e1NIQX1pSm82ZVJzNGRjK3VRVFYwdFQya3U0cVExVDQ9
+
+dn: cn=Srivani Ausula,cn=Users,dc=itsnet,dc=maxcrc,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: uidObject
+objectClass: top
+cn: Srivani Ausula
+sn: Ausula
+uid: ausulas
+userPassword:: YWRtaW4=
+
+dn: cn=Bala Vihar gupta,cn=Users,dc=itsnet,dc=maxcrc,dc=com
+objectClass: organizationalPerson
+objectClass: person
+objectClass: uidObject
+objectClass: top
+cn: Bala Vihar gupta
+sn: Balavihar Gupta
+uid: vihar
+userPassword:: e1NIQX0wRFBpS3VOSXJyVm1EOElVQ3V3MWhReE5xWmM9
+
+dn: ou=SecurityGroups,dc=itsnet,dc=maxcrc,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: SecurityGroups
+
+dn: cn=itsdevdev,ou=SecurityGroups,dc=itsnet,dc=maxcrc,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: itsdevdev
+member: cn=Admin,cn=Users,dc=itsnet,dc=maxcrc,dc=com
+member: cn=Super Admin,cn=Users,dc=itsnet,dc=maxcrc,dc=com
+
+dn: cn=tradersList,ou=SecurityGroups,dc=itsnet,dc=maxcrc,dc=com
+objectClass: groupOfNames
+objectClass: top
+cn: tradersList
+member: cn=Srivani Ausula,cn=Users,dc=itsnet,dc=maxcrc,dc=com
+member: cn=Bala Vihar Gupta,cn=Users,dc=itsnet,dc=maxcrc,dc=com
+
+dn: ou=People,dc=maxcrc,dc=com
+objectClass: organizationalUnit
+objectClass: top
+description: Container for user entries
+ou: People
+

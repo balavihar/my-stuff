@@ -22,6 +22,7 @@
   </properties>
   <modules>
     <module>test-examples</module>
+      <module>ldap-server</module>
   </modules>
   
   <dependencyManagement>

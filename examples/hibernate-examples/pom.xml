@@ -11,11 +11,16 @@
 
     <artifactId>hibernate-examples</artifactId>
 
-    <!--<dependencies>
+    <properties>
+        <hibernate-version>5.2.8.Final</hibernate-version>
+    </properties>
+
+    <dependencies>
         <dependency>
-            <groupId></groupId>
-            <artifactId></artifactId>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate-version}</version>
         </dependency>
-    </dependencies>-->
+    </dependencies>
 
 </project>

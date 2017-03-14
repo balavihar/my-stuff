@@ -23,6 +23,7 @@
   <modules>
     <module>test-examples</module>
       <module>ldap-server</module>
+      <module>hibernate-examples</module>
   </modules>
   
   <dependencyManagement>

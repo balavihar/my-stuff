@@ -1,9 +1,17 @@
 package examples;
 
+import javax.management.AttributeChangeNotification;
+import javax.management.MBeanNotificationInfo;
+import javax.management.Notification;
+import javax.management.NotificationBroadcasterSupport;
+
 /**
+ * With Standard Mbean and notifications.
  * Created by 609072804 on 30/04/2017.
  */
-public class Hello implements HelloMBean {
+public class Hello extends NotificationBroadcasterSupport
+        implements HelloMBean {
+
     public void sayHello() {
         System.out.println("hello, world");
     }
@@ -21,13 +29,36 @@ public class Hello implements HelloMBean {
     }
 
     public synchronized void setCacheSize(int size) {
-
+        int oldSize = this.cacheSize;
         this.cacheSize = size;
+
         System.out.println("Cache size now " + this.cacheSize);
+
+        Notification n = new AttributeChangeNotification(this,
+                sequenceNumber++, System.currentTimeMillis(),
+                "CacheSize changed", "CacheSize", "int",
+                oldSize, this.cacheSize);
+
+        sendNotification(n);
+    }
+
+    @Override
+    public MBeanNotificationInfo[] getNotificationInfo() {
+        String[] types = new String[]{
+                AttributeChangeNotification.ATTRIBUTE_CHANGE
+        };
+
+        String name = AttributeChangeNotification.class.getName();
+        String description = "An attribute of this MBean has changed";
+        MBeanNotificationInfo info =
+                new MBeanNotificationInfo(types, name, description);
+        return new MBeanNotificationInfo[]{info};
     }
 
     private final String name = "Reginald";
     private int cacheSize = DEFAULT_CACHE_SIZE;
     private static final int DEFAULT_CACHE_SIZE = 200;
+    private long sequenceNumber = 1;
 }
+
 

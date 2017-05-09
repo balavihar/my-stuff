@@ -8,7 +8,8 @@ import java.util.regex.Pattern;
  */
 public class MatcherPatterns {
 
-    public static final String REGEX_PATTERN = "[a-zA-Z0-9_一-龯]+";//"[zenkaku 全角]";//"[a-zA-Z0-9_]+";
+    public static final String REGEX_PATTERN = "[a-zA-Z0-9_\u4e00-\u9faf]+";
+    //"[a-zA-Z0-9_一-龯]+";//"[zenkaku 全角]";//"[a-zA-Z0-9_]+";
 
     private static boolean matchesRegExp(final String regExp, String str) {
 
@@ -26,7 +27,7 @@ public class MatcherPatterns {
 
         System.out.println("test "+matchesRegExp(REGEX_PATTERN, "テスト"));
 
-        System.out.println(matchesRegExp(REGEX_PATTERN, "角"));
+        System.out.println(matchesRegExp(REGEX_PATTERN, "角丅"));
 
         System.out.println(matchesRegExp(REGEX_PATTERN, "漢字日本語文字言語言葉"));
     }

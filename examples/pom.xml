@@ -53,6 +53,22 @@
 
 
     <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.5</version>
+                    <!--<configuration>
+                        <verbose>true</verbose>
+                        <fork>true</fork>
+                        <executable>${JAVA_LATEST_HOME}/bin/javac</executable>
+                        <source>${maven.compiler.source}</source>
+                        <target>${maven.compiler.target}</target>
+                        <maxmem>2048m</maxmem>
+                    </configuration>-->
+                </plugin>
+            </plugins>
+        </pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

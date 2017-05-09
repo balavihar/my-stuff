@@ -25,6 +25,7 @@
       <module>ldap-server</module>
       <module>hibernate-examples</module>
       <module>jmx-examples</module>
+      <module>core-java</module>
   </modules>
   
   <dependencyManagement>

@@ -30,5 +30,21 @@ public class MatcherPatterns {
         System.out.println(matchesRegExp(REGEX_PATTERN, "角丅"));
 
         System.out.println(matchesRegExp(REGEX_PATTERN, "漢字日本語文字言語言葉"));
+
+        System.out.println(matchesRegExp("[0-9#]*", "234"));
+
+        System.out.println(matchesRegExp("[0-9#]*", "234adads"));
+
+        System.out.println(matchesRegExp("[0-9#]*", "adads"));
+
+        System.out.println(matchesRegExp("[0-9#]*", "1234#"));
+
+        System.out.println(matchesRegExp("[0-9#]*", "234#5345#7567#"));
+
+        System.out.println(matchesRegExp("[0-9#]*", "12341234#sxfgsdg"));
+
+        Long i = new Long(99999999);
+
+        System.out.println(i.equals(99999999L));
     }
 }

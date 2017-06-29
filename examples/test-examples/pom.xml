@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.vihar.examples</groupId>
     <artifactId>examples</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0.1-SNAPSHOT</version>
   </parent>
   <artifactId>test-examples</artifactId>
   <packaging>pom</packaging>
@@ -57,7 +57,7 @@
         <dependency>
 	       <groupId>com.vihar.examples.test-examples</groupId>
 	       <artifactId>common</artifactId>
-	       <version>0.0.1-SNAPSHOT</version>
+	       <version>1.0.0.1-SNAPSHOT</version>
 	    </dependency>
   	</dependencies>
   </dependencyManagement>

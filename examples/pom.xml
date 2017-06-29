@@ -4,7 +4,7 @@
 
   <groupId>com.vihar.examples</groupId>
   <artifactId>examples</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <distributionManagement>
@@ -26,6 +26,7 @@
       <module>hibernate-examples</module>
       <module>jmx-examples</module>
       <module>core-java</module>
+      <module>python-examples</module>
   </modules>
   
   <dependencyManagement>

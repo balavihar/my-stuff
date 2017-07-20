@@ -1,5 +1,7 @@
 package com.core.example.patterns;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -46,5 +48,46 @@ public class MatcherPatterns {
         Long i = new Long(99999999);
 
         System.out.println(i.equals(99999999L));
+    }
+
+    public static void main1(String[] args) {
+
+        String testStr = null;
+
+        testStr = "Test String";
+
+        System.out.println(testStr.toString());
+
+        List<Person> l = new ArrayList<>();
+        l.add(new Person("aaa", "111"));
+        l.add(new Person("bbb", "222"));
+        l.add(new Person("ccc", "333"));
+        l.add(new Person("ccc", "444"));
+
+        String finalStr = l.stream()
+                .map(p -> {
+                    if(true)
+                        return "  ".concat(p.name).concat(" = '").concat(p.nickName).concat("' and ");
+                    else
+                        return "  ".concat(p.name).concat(" = '").concat(p.nickName).concat("' and ");
+                })
+                .reduce(String::concat)
+                .map(s -> s.substring(0, s.lastIndexOf("and")))
+                .orElse("");
+
+        System.out.println(finalStr);
+        //System.out.println(finalStr.substring(0, finalStr.lastIndexOf("and")));
+
+        System.out.println(finalStr.replace("asdasdasd", "zzzzzzzzzzz"));
+    }
+}
+
+class Person {
+    public String name;
+    public String nickName;
+
+    Person(String name, String nickName) {
+        this.name = name;
+        this.nickName = nickName;
     }
 }

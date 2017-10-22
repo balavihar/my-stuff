@@ -11,6 +11,11 @@ import java.util.regex.Pattern;
 public class MatcherPatterns {
 
     public static final String REGEX_PATTERN = "[a-zA-Z0-9_\u4e00-\u9faf]+";
+    //public static final String KANJI_REGEX_PATTERN = "[a-zA-Z0-9_\\x3400-\\x4DB5\\x4E00-\\x9FCB\\xF900-\\xFA6A]+";
+    //public static final String KANJI_REGEX_PATTERN = "[a-zA-Z0-9_][\u3000-\u303F]|[\u3040-\u309F]|[\u30A0-\u30FF]|[\uFF00-\uFFEF]|[\u4E00-\u9FAF]|[\u2605-\u2606]|[\u2190-\u2195]|\u203B";
+    //public static final String KANJI_REGEX_PATTERN = "[a-zA-Z0-9_]+[\\p{InHiragana}]+";//"[\\p{InHan}\\p{InHiragana}\\p{InKatakana}]";
+    public static final String KANJI_REGEX_PATTERN = "[a-zA-Z0-9_\u4e00-\u9faf|\u3000-\u303F|\u3040-\u309F|\u30A0-\u30FF|\uFF00-\uFFEF|\u4E00-\u9FAF|\u2605-\u2606|\u2190-\u2195|\u203B]+";
+    // [\x3400-\x4DB5\x4E00-\x9FCB\xF900-\xFA6A]
     //"[a-zA-Z0-9_一-龯]+";//"[zenkaku 全角]";//"[a-zA-Z0-9_]+";
 
     private static boolean matchesRegExp(final String regExp, String str) {
@@ -32,6 +37,14 @@ public class MatcherPatterns {
         System.out.println(matchesRegExp(REGEX_PATTERN, "角丅"));
 
         System.out.println(matchesRegExp(REGEX_PATTERN, "漢字日本語文字言語言葉"));
+
+        System.out.println(matchesRegExp(REGEX_PATTERN, "こんにちは"));
+
+        System.out.println("Kanji : " + matchesRegExp(KANJI_REGEX_PATTERN, "なにげない日々。"));
+
+        System.out.println("Kanji : " + matchesRegExp(KANJI_REGEX_PATTERN, "会话管理器"));
+
+        System.out.println("Kanji 1 : " + matchesRegExp(REGEX_PATTERN, "なにげない日々。"));
 
         System.out.println(matchesRegExp("[0-9#]*", "234"));
 

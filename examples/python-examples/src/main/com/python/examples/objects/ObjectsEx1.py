@@ -1,4 +1,13 @@
+# from src.main.com.python.examples.objects import testStrObj
+# from com.python.examples.objects import testStrObj
+# from com.python.examples.inheritances import *
 # Note: You may get different value of id
+# from src.main.com.python.examples.inheritances.InheritEx1 import *
+import sys
+
+from objects import download
+
+# from hello import testStrObj
 
 a = 2
 # Output: id(2)= 10919424
@@ -34,3 +43,11 @@ b = 2
 
 # Output: id(2)= 10919424
 print('id(2) =', id(2))
+
+print("{name} wants to eat {food}".format(food="lasagna", name="Bob"))
+# print(testStrObj.format(food="apples", name="Rob"))
+
+# Polygon p
+print(sys.path)
+
+download

@@ -29,3 +29,6 @@ class Triangle(Polygon):
 
 t = Triangle()
 t.find_area()
+print(id(p))
+print(id(t))
+testStrObj = "{name} wants to eat {food}"

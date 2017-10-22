@@ -23,3 +23,15 @@ def multiply(n, x):
     print(timesN(x))
 
 multiply(5, 5)
+
+print(__name__)
+
+class Test(object):
+    print(__name__)
+    def __init__(self):
+        print(__name__ + "aaa")
+    def test_method(self) :
+        print(__name__)
+
+print(Test().test_method())
+print(Test.__name__)

@@ -27,6 +27,8 @@
       <module>jmx-examples</module>
       <module>core-java</module>
       <module>python-examples</module>
+      <module>primefaces-ex</module>
+      <module>restlet-examples</module>
   </modules>
   
   <dependencyManagement>

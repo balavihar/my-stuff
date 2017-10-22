@@ -1,0 +1,249 @@
+C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\Program Files\Java\jdk1.8.0_60\bin;E:\Sreeni\software\apache-maven-3.3.9\bin;C:\Program Files\MIT\Kerberos\bin;C:\Users\609072804\softwares\apache-maven-3.5.0-bin\apache-maven-3.5.0\bin;C:\Program Files\PostgreSQL\9.5\bin;C:\Program Files\Git\cmd;C:\Users\609072804\softwares\jetty-distribution-9.3.18.v20170406\bin;C:\Users\609072804\softwares\gradle-3.5\bin;C:\Users\609072804\softwares\graphviz-2.38\release\bin
+
+C:\Users\609072804\softwares\python-3.6.1-embed-amd64;C:\WINDOWS\system32;C:\Program Files\Java\jdk1.8.0_60\bin;E:\Sreeni\software\apache-maven-3.3.9\bin;C:\Program Files\MIT\Kerberos\bin;C:\Users\609072804\softwares\apache-maven-3.5.0-bin\apache-maven-3.5.0\bin;C:\Program Files\PostgreSQL\9.5\bin;C:\Program Files\Git\cmd;C:\Users\609072804\softwares\jetty-distribution-9.3.18.v20170406\bin;C:\Users\609072804\softwares\gradle-3.5\bin;C:\Users\609072804\softwares\graphviz-2.38\release\bin
+
+
+
+PUT /uta/enterprises/bt/turret-informations/0706002061 HTTP/1.1
+Host: 10.221.4.229:8182
+Transfer-Encoding: chunked
+Accept: application/vnd.bt-com.sessionmanager-schema+json;version=1.2
+User-Agent: BT/Netrix/1.0
+sm-stomp-login: 0706002061
+sm-correlation-id: 7618100a-4ea8-58aa-d3a5-bdda9437b25e
+Content-Type: application/vnd.bt-com.sessionmanager-schema+json;version=1.2
+Content-Length: 1362
+Authorization: BTTurret dHVycmV0Ojk2OTEzMQ==
+Expect: 100-continue
+
+HTTP/1.1 100 Continue
+
+552
+{"id":"0706002061","rev":"0706002061","serialNumber":"0706002061","settings":{"authenticate-turret-url":"/uta/enterprises/bt/clusters/Cluster1/authenticate-turret","bootTime":"2017-08-16T21:45:05Z","hardwareInfo":{"types":[]},"host":{"activeInterface":1,"interfaces":[{"address":"10.221.16.137","id":1},{"id":2}]},"hostname":"BTNetrix0706002061","ip-address":"10.221.16.137","location":"global.uk.london","timestamp":"2017-09-21T15:43:52.716Z","turretType":"NetrixButton","userInfo":{"currentProfile":{"name":"Test13256_Profile","settingsUrl":"/uta/enterprises/bt/users/5001/profiles/Test13256_Profile/settings","url":"/uta/enterprises/bt/users/5001/denormalised-profiles/Test13256_Profile/versions/6055"},"status":"Logged On","timestamp":"2017-09-21T15:43:52.716Z","turretUserId":"5001"},"versionInfo":[{"name":"Bootcode","status":"loaded","timestamp":"2017-08-16T21:45:05Z","version":"2.1.1.0"},{"name":"Kernel","status":"loaded","timestamp":"2017-08-16T21:45:05Z","version":"3.0.18.0"},{"name":"Root FS","status":"loaded","timestamp":"2017-08-16T21:45:05Z","version":"3.3.2.6"},{"name":"Data FS","status":"loaded","timestamp":"2017-09-20T15:32:22Z","version":"3.0.63.0"},{"name":"Infra FS","status":"loaded","timestamp":"2017-09-20T15:32:22Z","version":"5.1.0.10"},{"name":"Apps FS","status":"loaded","timestamp":"2017-09-20T15:32:22Z","version":"5.1.0.9"}]}}
+PUT /uta/enterprises/bt/turret-informations/0706002061 HTTP/1.1
+Host: 10.221.4.229:8182
+Transfer-Encoding: chunked
+Accept: application/vnd.bt-com.sessionmanager-schema+json;version=1.2
+User-Agent: BT/Netrix/1.0
+sm-stomp-login: 0706002061
+sm-correlation-id: 7618100a-4ea8-58aa-d3a5-bdda9437b25e
+Content-Type: application/vnd.bt-com.sessionmanager-schema+json;version=1.2
+Content-Length: 1362
+Authorization: BTTurret dHVycmV0Ojk2OTEzMQ==
+Expect: 100-continue
+
+552
+{
+	"id": "0706002061",
+	"rev": "0706002061",
+	"serialNumber": "0706002061",
+	"settings": {
+		"authenticate-turret-url": "/uta/enterprises/bt/clusters/Cluster1/authenticate-turret",
+		"bootTime": "2017-08-16T21:45:05Z",
+		"hardwareInfo": {
+			"types": []
+		},
+		"host": {
+			"activeInterface": 1,
+			"interfaces": [{
+				"address": "10.221.16.137",
+				"id": 1
+			},
+			{
+				"id": 2
+			}]
+		},
+		"hostname": "BTNetrix0706002061",
+		"ip-address": "10.221.16.137",
+		"location": "global.uk.london",
+		"timestamp": "2017-09-21T15:43:52.716Z",
+		"turretType": "NetrixButton",
+		"userInfo": {
+			"currentProfile": {
+				"name": "Test13256_Profile",
+				"settingsUrl": "/uta/enterprises/bt/users/5001/profiles/Test13256_Profile/settings",
+				"url": "/uta/enterprises/bt/users/5001/denormalised-profiles/Test13256_Profile/versions/6055"
+			},
+			"status": "Logged On",
+			"timestamp": "2017-09-21T15:43:52.716Z",
+			"turretUserId": "5001"
+		},
+		"versionInfo": [{
+			"name": "Bootcode",
+			"status": "loaded",
+			"timestamp": "2017-08-16T21:45:05Z",
+			"version": "2.1.1.0"
+		},
+		{
+			"name": "Kernel",
+			"status": "loaded",
+			"timestamp": "2017-08-16T21:45:05Z",
+			"version": "3.0.18.0"
+		},
+		{
+			"name": "Root FS",
+			"status": "loaded",
+			"timestamp": "2017-08-16T21:45:05Z",
+			"version": "3.3.2.6"
+		},
+		{
+			"name": "Data FS",
+			"status": "loaded",
+			"timestamp": "2017-09-20T15:32:22Z",
+			"version": "3.0.63.0"
+		},
+		{
+			"name": "Infra FS",
+			"status": "loaded",
+			"timestamp": "2017-09-20T15:32:22Z",
+			"version": "5.1.0.10"
+		},
+		{
+			"name": "Apps FS",
+			"status": "loaded",
+			"timestamp": "2017-09-20T15:32:22Z",
+			"version": "5.1.0.9"
+		}]
+	}
+}
+0
+h 640
+w1524
+
+
+BT_GS_SM_Q2_1718_2592289_ON_Aug
+
+GET /uta/enterprises/bt/users/5001/call-lists/missed-calls?profile=Test13256_Profile HTTP/1.1
+Host: 10.221.4.229:8182
+Accept: application/vnd.bt-com.sessionmanager-schema+json;version=1.2
+User-Agent: BT/Netrix/1.0
+sm-stomp-login: 0706002061
+sm-correlation-id: 001b66f9-186b-3e99-b596-dae5f30cdb6a
+Authorization: BTUserId NTAwMToxMjM0
+
+HTTP/1.1 200 OK
+Content-Type: application/vnd.bt-com.sessionmanager-schema+json; version=1.2; charset=UTF-8
+Date: Fri, 22 Sep 2017 15:37:00 GMT
+Accept-Ranges: bytes
+Server: Restlet-Framework/2.3.5
+Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Authorization, sm-process-node-name, sm-correlation-id, sm-stomp-login, sm-diagnostic-context, sm-request, sm-timestamp, sm-sender, Content-Type
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT
+Access-Control-Max-Age: 86400
+sm-correlation-id: 001b66f9-186b-3e99-b596-dae5f30cdb6a
+sm-diagnostic-context: 
+sm-timestamp: 20170922T153700.612Z
+sm-sender: services/100
+Content-Length: 1479
+
+{
+  "missedCalls" : [ {
+    "ringDuration" : 3,
+    "replied" : false,
+    "reviewed" : false,
+    "callCount" : 10,
+    "id" : "2472",
+    "appearanceId" : {
+      "appearanceNumber" : 1,
+      "virtualLineAddressId" : {
+        "address" : "sip:4002@uta.bt.com",
+        "type" : "DirectDial"
+      }
+    },
+    "cpn" : "4001CPN",
+    "lastTimeOfCall" : "2017-09-22T15:35:54+0000",
+    "vlaLabel" : "4002l/1",
+    "rev" : "2472",
+    "phoneNumber" : "4001"
+  }, {
+    "ringDuration" : 3,
+    "replied" : false,
+    "reviewed" : false,
+    "callCount" : 1,
+    "id" : "2450",
+    "appearanceId" : {
+      "appearanceNumber" : 2,
+      "virtualLineAddressId" : {
+        "address" : "sip:4001@HTTP/1.1 200 OK
+Content-Type: application/vnd.bt-com.sessionmanager-schema+json; version=1.2; charset=UTF-8
+Date: Fri, 22 Sep 2017 15:37:00 GMT
+Accept-Ranges: bytes
+Server: Restlet-Framework/2.3.5
+Vary: Accept-Charset, Accept-Encoding, Accept-Language, Accept
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: Authorization, sm-process-node-name, sm-correlation-id, sm-stomp-login, sm-diagnostic-context, sm-request, sm-timestamp, sm-sender, Content-Type
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT
+Access-Control-Max-Age: 86400
+sm-correlation-id: 001b66f9-186b-3e99-b596-dae5f30cdb6a
+sm-diagnostic-context: 
+sm-timestamp: 20170922T153700.612Z
+sm-sender: services/100
+Content-Length: 1479
+
+{
+  "missedCalls" : [ {
+    "ringDuration" : 3,
+    "replied" : false,
+    "reviewed" : false,
+    "callCount" : 10,
+    "id" : "2472",
+    "appearanceId" : {
+      "appearanceNumber" : 1,
+      "virtualLineAddressId" : {
+        "address" : "sip:4002@uta.bt.com",
+        "type" : "DirectDial"
+      }
+    },
+    "cpn" : "4001CPN",
+    "lastTimeOfCall" : "2017-09-22T15:35:54+0000",
+    "vlaLabel" : "4002l/1",
+    "rev" : "2472",
+    "phoneNumber" : "4001"
+  }, {
+    "ringDuration" : 3,
+    "replied" : false,
+    "reviewed" : false,
+    "callCount" : 1,
+    "id" : "2450",
+    "appearanceId" : {
+      "appearanceNumber" : 2,
+      "virtualLineAddressId" : {
+        "address" : "sip:4001@uta.bt.com",
+        "type" : "DirectDial"
+      }
+    },
+    "cpn" : "4001CPN",
+    "lastTimeOfCall" : "2017-09-22T10:45:45+0000",
+    "vlaLabel" : "4001L/2",
+    "rev" : "2450",
+    "phoneNumber" : "4001"
+  }, {
+    "ringDuration" : 6,
+    "replied" : true,
+    "reviewed" : true,
+    "callCount" : 0,
+    "id" : "2444",
+    "appearanceId" : {
+      "appearanceNumber" : 1,
+      "virtualLineAddressId" : {
+        "address" : "sip:4001@uta.bt.com",
+        "type" : "DirectDial"
+      }
+    },
+    "cpn" : "40002CPN",
+    "lastTimeOfCall" : "2017-09-21T14:51:48+0000",
+    "vlaLabel" : "4001L/1",
+    "rev" : "2444",
+    "phoneNumber" : "4002"
+  } ],
+  "unReviewedCount" : 11,
+  "pageRef" : {
+    "totalPage" : 1,
+    "totalCount" : 3,
+    "pageSize" : 50,
+    "pageNumber" : 1
+  }
+}

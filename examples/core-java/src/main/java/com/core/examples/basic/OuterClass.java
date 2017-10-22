@@ -7,6 +7,7 @@ public class OuterClass {
 
     private class InnerClass {
 
+
         public void sayHello() {
             System.out.println("Hello");
         }

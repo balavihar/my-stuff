@@ -15,10 +15,15 @@
   </distributionManagement>
 
   <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <junit.version>4.12</junit.version>
-	<spock.version>1.1-groovy-2.4-rc-3</spock.version>
-    <mockito.version>2.2.29</mockito.version>
+      <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+      <junit.version>4.12</junit.version>
+	  <spock.version>1.1-groovy-2.4-rc-3</spock.version>
+      <mockito.version>2.2.29</mockito.version>
+      <jsf.version>2.2.15</jsf.version>
+      <primefaces.version>6.1</primefaces.version>
+      <primefaces.ext.version>1.2.1</primefaces.ext.version>
+      <primefaces-themes.version>1.0.9</primefaces-themes.version>
+      <primefaces-flick-brown.version>1.0.13</primefaces-flick-brown.version>
   </properties>
   <modules>
     <module>test-examples</module>
@@ -51,6 +56,26 @@
             <version>${spock.version}</version>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-api</artifactId>
+            <version>${jsf.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.faces</groupId>
+            <artifactId>jsf-impl</artifactId>
+            <version>${jsf.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.primefaces</groupId>
+            <artifactId>primefaces</artifactId>
+            <version>${primefaces.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.primefaces.extensions</groupId>
+            <artifactId>primefaces-extensions</artifactId>
+            <version>${primefaces.ext.version}</version>
+        </dependency>
   	</dependencies>
   </dependencyManagement>
 
@@ -59,6 +84,7 @@
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
                     <version>3.5</version>
                     <!--<configuration>

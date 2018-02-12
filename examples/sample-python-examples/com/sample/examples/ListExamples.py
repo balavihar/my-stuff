@@ -24,7 +24,8 @@ print(myList[2:6])
 print(1 in my_sub_list)
 print(2 in myList)
 for value in myList:
-    print(value, end="\n")
+    print (value)
+    #print(value, end="\n")
 
 print("\n",sorted(myList),)
 print(myList.sort())

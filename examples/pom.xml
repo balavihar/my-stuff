@@ -34,6 +34,8 @@
       <module>python-examples</module>
       <module>primefaces-ex</module>
       <module>restlet-examples</module>
+      <module>openfire-examples</module>
+      <module>web-examples</module>
   </modules>
   
   <dependencyManagement>

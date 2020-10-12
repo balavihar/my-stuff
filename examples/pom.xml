@@ -16,7 +16,7 @@
 
   <properties>
       <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-      <junit.version>4.12</junit.version>
+      <junit.version>4.13.1</junit.version>
 	  <spock.version>1.1-groovy-2.4-rc-3</spock.version>
       <mockito.version>2.2.29</mockito.version>
       <jsf.version>2.2.15</jsf.version>
